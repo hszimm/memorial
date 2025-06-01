@@ -1,45 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Memorial da Vovó</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memorial - Vó Maria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: #fefefe;
+            color: #333;
+        }
+
+        header {
+            background: #e9e9ff;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3rem;
+            margin: 0.5rem 0;
+            color: #4a3c91;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .dates {
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            color: #4a3c91;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .comments {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #f9f9ff;
+            border-left: 4px solid #4a3c91;
+        }
+
+        .comment {
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #999;
+            margin-top: 3rem;
+        }
+
+ .comment1 {
+            margin-bottom: 1rem;
+            font-style: italic;
+background: #e9e9ff;
+padding: 30px;
+margin-bottom: 8px;
+border-left: solid 5px #4a3c91;
+
+        }
+
+
+    </style>
 </head>
+
 <body>
-  <header>
-    <h1>Memorial da Vovó Maria</h1>
-    <p>Uma vida de amor, fé e memórias eternas.</p>
-  </header>
 
-  <section class="biografia">
-    <h2>Biografia</h2>
-    <p>
-      Maria nasceu em 1935 em uma pequena cidade do interior. Sempre sorridente e acolhedora, dedicou sua vida à família e à fé...
-    </p>
-  </section>
+    <header>
+        <h1>Vó Maria</h1>
+        <p class="dates">⭐ 10/05/1940 &nbsp;&nbsp;&nbsp; ✝ 21/03/2024</p>
+        <p>Para sempre em nossos corações</p>
+    </header>
 
-  <section class="galeria">
-    <h2>Galeria de Fotos</h2>
-    <div class="fotos">
-      <img src="imagens/foto1.jpg" alt="Vovó sorrindo" />
-      <img src="imagens/foto2.jpg" alt="Vovó com a família" />
-      <img src="imagens/foto3.jpg" alt="Momentos felizes" />
+<div class="container">
+<h2 class="section-title">Biografia</h2>
+<p class="comments">Maria nasceu em 1935 em uma pequena cidade do interior. Sempre sorridente e acolhedora, dedicou sua vida à família e à fé...</p>
+
+</div>
+
+
+
+
+
+
+<div class="container">
+<h2 class="section-title" >Homenagens da Família</h2>
+<div class="comment1" > <b> João (filho):</b> Mãe, você foi a luz da nossa casa. Sentimos sua falta todos os dias.</div>
+<div class="comment1" > <b> Ana (neta):</b> Te amo eternamente, vó. Obrigada por tudo que me ensinou.</div>
+
+</div>
+    <div class="container">
+        <section>
+            <h2 class="section-title">Galeria de Memórias</h2>
+            <div class="gallery">
+                <img src="img/th.jpg" alt="Foto 1">
+                <img src="img/th.jpg" alt="Foto 2">
+                <img src="img/th.jpg" alt="Foto 3">
+                <!-- Adicione mais imagens aqui -->
+            </div>
+        </section>
+
+        <section class="comments">
+            <h2 class="section-title">Palavras da Família</h2>
+            <p class="comment">"Sinto tanto a sua falta, vó. Você foi luz na nossa vida."</p>
+            <p class="comment">"O amor da senhora vai viver eternamente em nossos corações."</p>
+            <!-- Adicione mais comentários aqui -->
+        </section>
     </div>
-  </section>
 
-  <section class="comentarios">
-    <h2>Homenagens da Família</h2>
-    <div class="mensagem">
-      <p><strong>João (filho):</strong> Mãe, você foi a luz da nossa casa. Sentimos sua falta todos os dias.</p>
-    </div>
-    <div class="mensagem">
-      <p><strong>Ana (neta):</strong> Te amo eternamente, vó. Obrigada por tudo que me ensinou.</p>
-    </div>
-  </section>
-
-  <footer>
-    <p>Com amor eterno, da sua família. ❤️</p>
-  </footer>
+    <footer>
+        &copy;Com amor, Nome da Família
+    </footer>
+    
 </body>
 </html>
