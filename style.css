@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fffaf0;
+  color: #333;
+}
+
+header {
+  background: #6a5acd;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+section {
+  padding: 30px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  color: #6a5acd;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.biografia p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.galeria .fotos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.galeria img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+.comentarios .mensagem {
+  background: #f9f9f9;
+  border-left: 5px solid #6a5acd;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+  font-style: italic;
+}
