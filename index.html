@@ -83,17 +83,14 @@
             margin-top: 3rem;
         }
 
- .comment1 {
+        .comment1 {
             margin-bottom: 1rem;
             font-style: italic;
-background: #e9e9ff;
-padding: 30px;
-margin-bottom: 8px;
-border-left: solid 5px #4a3c91;
-
+            background: #e9e9ff;
+            padding: 30px;
+            margin-bottom: 8px;
+            border-left: solid 5px #4a3c91;
         }
-
-
     </style>
 </head>
 
@@ -105,23 +102,17 @@ border-left: solid 5px #4a3c91;
         <p>Para sempre em nossos corações</p>
     </header>
 
-<div class="container">
-<h2 class="section-title">Biografia</h2>
-<p class="comments">Maria nasceu em 1935 em uma pequena cidade do interior. Sempre sorridente e acolhedora, dedicou sua vida à família e à fé...</p>
+    <div class="container">
+        <h2 class="section-title">Biografia</h2>
+        <p class="comments">Maria nasceu em 1935 em uma pequena cidade do interior. Sempre sorridente e acolhedora, dedicou sua vida à família e à fé...</p>
+    </div>
 
-</div>
+    <div class="container">
+        <h2 class="section-title">Homenagens da Família</h2>
+        <div class="comment1"><b>João (filho):</b> Mãe, você foi a luz da nossa casa. Sentimos sua falta todos os dias.</div>
+        <div class="comment1"><b>Ana (neta):</b> Te amo eternamente, vó. Obrigada por tudo que me ensinou.</div>
+    </div>
 
-
-
-
-
-
-<div class="container">
-<h2 class="section-title" >Homenagens da Família</h2>
-<div class="comment1" > <b> João (filho):</b> Mãe, você foi a luz da nossa casa. Sentimos sua falta todos os dias.</div>
-<div class="comment1" > <b> Ana (neta):</b> Te amo eternamente, vó. Obrigada por tudo que me ensinou.</div>
-
-</div>
     <div class="container">
         <section>
             <h2 class="section-title">Galeria de Memórias</h2>
@@ -142,8 +133,35 @@ border-left: solid 5px #4a3c91;
     </div>
 
     <footer>
-        &copy;Com amor, Nome da Família
+        &copy; Com amor, Nome da Família
     </footer>
-    
+
+    <!-- 🔒 Script de Proteção -->
+    <script>
+        // Bloqueia botão direito
+        document.addEventListener("contextmenu", e => e.preventDefault());
+
+        // Bloqueia teclas perigosas (F12, Ctrl+U, Ctrl+Shift+I, etc.)
+        document.addEventListener("keydown", function (e) {
+            if (
+                e.key === "F12" ||
+                (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) ||
+                (e.ctrlKey && e.key === "U")
+            ) {
+                e.preventDefault();
+            }
+        });
+
+        // Bloqueia arrastar
+        document.addEventListener("dragstart", e => e.preventDefault());
+
+        // Bloqueia seleção de texto
+        document.addEventListener("selectstart", e => e.preventDefault());
+
+        // Tenta impedir PrintScreen colando aviso na área de transferência
+        setInterval(() => {
+            navigator.clipboard.writeText('Captura de tela desativada neste memorial.');
+        }, 1000);
+    </script>
 </body>
 </html>
